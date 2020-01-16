@@ -1,0 +1,21 @@
+<div class="presentador">
+    <swiper class="swiper-container" [config]="config" #swipper>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let slide of apiData">
+          
+          <div class="information">
+            <p>
+            <span class="legend">Slide</span>
+            {{ slide.id }}
+            </p>
+          </div>
+
+          <img data-src="{{ slide.url }}" class="swiper-lazy">
+          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+    </swiper>
+  </div>
