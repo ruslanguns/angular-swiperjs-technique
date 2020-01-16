@@ -39,10 +39,11 @@ body {
 }
 
 img {
+  top: 0;
   width: 100%;
-  max-width: 100%;
   height: auto;
-  max-height: 100%;
+  max-width: 100vh;
+  left: 0;
 }
 
 .information {
